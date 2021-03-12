@@ -1,0 +1,17 @@
+.container{
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.hide-for-desktop{
+    @include breakpoint-up('medium'){
+        display: none;
+    }
+}
+
+.hide-for-mobile{
+    @include breakpoint-down('medium'){
+        display: none;
+    }
+}
