@@ -57,6 +57,11 @@ table {
   padding-right: 4rem;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (min-width: 40em) {
   .hide-for-desktop {
     display: none;
@@ -110,11 +115,27 @@ table {
           justify-content: space-evenly;
 }
 
-.hero {
+.hero_wrapper {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff525d), to(#ff7a85));
   background-image: linear-gradient(#ff525d, #ff7a85);
   border-radius: 0px 0px 0px 10rem;
   height: 90vh;
   padding-bottom: 10vh;
+}
+
+.hero__text-heading {
+  color: white;
+  font-size: 3.0625rem;
+  font-family: "Overpass", sans-serif;
+  padding-top: 9.1875rem;
+  font-weight: 700;
+}
+
+.hero__text-subheading {
+  padding-top: 2.625rem;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,30 @@
 .hero{
+
+    &_wrapper{
     background-image:linear-gradient($lightRed,$veryLightRed);
     border-radius: 0px 0px 0px 10rem ;
    // background-image: url(../images/bg-pattern-intro.svg);
     // background-position: center;
     height: 90vh;
     padding-bottom: 10vh;
+    }
+    &__text{
+        &-heading{
+        color: $white;
+        font-size: $font-xlg;
+        font-family:$overpassFont;
+        padding-top: 9.1875rem;
+        font-weight: 700;
+        }
+        &-subheading{
+            padding-top: 2.625rem;
+            color: $white;
+            font-family:$overpassFont;
+            font-size: $font-md;
+            font-weight: 400;
+        }
+    }
+
+
 
 }
