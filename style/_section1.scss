@@ -1,0 +1,10 @@
+.section1{
+    &__text{
+        &-heading{
+            color: $veryDarkGrayishBlue;
+            font: $overpassFont;
+            font-weight: 400;
+            font-size: $font-lg;
+        }
+    }
+}
