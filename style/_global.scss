@@ -1,8 +1,22 @@
 
 .container{
 
-    padding-left: 4rem;
-    padding-right: 4rem;
+    &-padding{
+
+        &-hor{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        &-ver{
+            padding-top: 4rem;
+            padding-right: 4rem;
+        }
+        &-all{
+            padding: 4rem 4rem;
+        }
+    }
+
+    
 }
 
 .center{
@@ -32,60 +46,99 @@
     }
 }
 .grid{
-    display: grid;
+    
     &-col{
         &-2{
-            grid-template-columns: repeat(2,1fr);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             
         }
         &-4{
+            display: grid;
             grid-template-columns: repeat(4,1fr);
         }
         &-6{
-            grid-template: repeat(6,1fr);
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
         }
         &-12{
-            grid-template: repeat((12,1fr));
+            grid-template-columns: repeat((12,1fr));
         }
     }
     &-row{
         &-2{
+            display: grid;
             grid-template-rows: repeat(2,1fr);
         }
         &-4{
+            display: grid;
             grid-template-rows: repeat(4,1fr);
         }
         &-6{
+            display: grid;
             grid-template-rows: repeat(6,1fr);
         }
         &-12{
+            display: grid;
             grid-template-rows: repeat((12,1fr));
         }
     }
 }
 
 .flex{
-    display: flex;
+    
     &-jc{
+        
         &-c{
         justify-content: center;
+        display: flex;
         }
         
         &-fs{
         justify-content:flex-start;
+        display: flex;
         }
         
         &-fe{
         justify-content: flex-end;
+        display: flex;
         }
         &-sa{
         justify-content:space-around;
+        display: flex;
         }
         &-sb{
         justify-content:space-between;
+        display: flex;
         }
         
         
+    }
+
+    &-ai{
+        &-c{
+            align-items: center;
+            display: flex;
+            }
+            
+            &-fs{
+            align-items:flex-start;
+            display: flex;
+            }
+            
+            &-fe{
+            align-items: flex-end;
+            display: flex;
+            }
+            &-sa{
+            align-items:space-around;
+            display: flex;
+            }
+            &-sb{
+            align-items:space-between;
+            display: flex;
+            }
+            
     }
     
 }

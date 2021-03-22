@@ -1,6 +1,4 @@
-@media(min-width: 64em){
-    //styles go here
-}
+
 
 //640px 1024px 1400px
 $breakpoints-up:("medium":"40em" , "large" :"64em","xlarge":"87.5em");
@@ -20,3 +18,21 @@ $breakpoints-down:("xSmall":"25em" ,"small":"39.9375em" ,"medium":"63.9375em" , 
         
     }
 }
+
+
+
+@mixin container($container-type,$container-dir,$value) {
+
+    @if $container-type=='padding' {
+        @if $container-dir=='left' {
+           padding-left: $value; 
+        }
+    }
+        
+    }
+        
+    
+    
+
+
+
