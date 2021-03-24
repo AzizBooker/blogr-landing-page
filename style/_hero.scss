@@ -1,11 +1,12 @@
 .hero{
 
     &_wrapper{
-    background-image:linear-gradient($lightRed,$veryLightRed);
+    
+    background-image:url(../images/bg-pattern-intro.svg),linear-gradient($veryLightRed,$lightRed);
+    background-position: center;
     
     border-radius: 0px 0px 0px 10rem ;
-   // background-image: url(../images/bg-pattern-intro.svg);
-    // background-position: center;
+   
     height: 90vh;
     padding-bottom: 10vh;
     

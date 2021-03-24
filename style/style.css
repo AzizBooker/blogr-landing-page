@@ -52,6 +52,23 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  word-spacing: 2px;
+  line-height: 1.5rem;
+}
+
 .container-padding-hor {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -237,6 +254,14 @@ table {
   display: flex;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-scroll-x {
+  overflow-x: hidden;
+}
+
 .navbar {
   padding-top: 4rem;
   display: -webkit-box;
@@ -279,8 +304,9 @@ table {
 }
 
 .hero_wrapper {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff525d), to(#ff7a85));
-  background-image: linear-gradient(#ff525d, #ff7a85);
+  background-image: url(../images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff7a85), to(#ff525d));
+  background-image: url(../images/bg-pattern-intro.svg), linear-gradient(#ff7a85, #ff525d);
+  background-position: center;
   border-radius: 0px 0px 0px 10rem;
   height: 90vh;
   padding-bottom: 10vh;
@@ -310,6 +336,72 @@ table {
   color: #4b5862;
   font: "Overpass", sans-serif;
   font-weight: 400;
+  font-size: 3.0625rem;
+  padding-top: 10.25rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 63.9375em) {
+  .section1__text-heading {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .section1__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .section1__left {
+    width: 100%;
+  }
+}
+
+.section1__left h2 {
   font-size: 2.0625rem;
+  font-weight: 600;
+  color: #25252d;
+  padding-bottom: 1.5rem;
+}
+
+.section1__left p {
+  color: #4b5862;
+}
+
+.section1__left:_item {
+  margin-bottom: 2.625rem;
+}
+
+.section1__right {
+  position: relative;
+}
+
+.section1__right img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  top: -140px;
+  left: 10%;
+}
+
+@media (max-width: 63.9375em) {
+  .section1__right img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 3.125rem;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

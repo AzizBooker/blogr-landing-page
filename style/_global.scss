@@ -1,4 +1,21 @@
-
+body{
+    
+}
+h1{
+    font-family: $ubuntuFont;
+    font-weight: 600;
+    
+}
+h2{
+    font-family: $ubuntuFont;
+    font-weight: 400;
+}
+p{
+    font-family: $overpassFont;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+}
 .container{
 
     &-padding{
@@ -143,3 +160,9 @@
     
 }
 
+.no-scroll{
+    overflow: hidden;
+    &-x{
+        overflow-x: hidden;
+    }
+}

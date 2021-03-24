@@ -1,10 +1,60 @@
 .section1{
+    
     &__text{
         &-heading{
             color: $veryDarkGrayishBlue;
             font: $overpassFont;
             font-weight: 400;
+            font-size: $font-xlg;
+            padding-top: 10.25rem;
+            padding-bottom: 6rem;
+            @include breakpoint-down('medium'){
+                padding-bottom: 4rem;
+            }
+        }
+    }
+    &__grid{
+        @include breakpoint-down('medium'){
+           // grid-template-columns: 1fr;
+            // direction: rtl;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__left{
+        @include breakpoint-down('medium'){
+            width: 100%;
+        }
+        h2{
             font-size: $font-lg;
+            font-weight: 600;
+            color: $veryDarkBlackBlue;
+            padding-bottom: 1.5rem;
+            
+        }
+        p{
+            color: $veryDarkGrayishBlue;
+        }
+        &:_item{
+            margin-bottom: 2.625rem;
+        }
+    }
+    &__right{
+        position: relative;
+        img{
+            object-fit: fill;
+            position: absolute;
+            top: -140px;
+            left: 10%;
+            @include breakpoint-down('medium'){
+                object-fit: cover;
+                top: 0px;
+                left: 0px;
+                position: relative;
+                margin: 0 auto;
+                padding-bottom: 3.125rem;
+                width: 100%;
+            }
         }
     }
 }
