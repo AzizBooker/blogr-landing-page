@@ -1,11 +1,11 @@
 .section1{
-    
+    height: 100vh;
     &__text{
         &-heading{
             color: $veryDarkGrayishBlue;
             font: $overpassFont;
             font-weight: 400;
-            font-size: $font-xlg;
+            
             padding-top: 10.25rem;
             padding-bottom: 6rem;
             @include breakpoint-down('medium'){
@@ -15,8 +15,7 @@
     }
     &__grid{
         @include breakpoint-down('medium'){
-           // grid-template-columns: 1fr;
-            // direction: rtl;
+          
             display: flex;
             flex-direction: column-reverse;
         }
@@ -24,6 +23,7 @@
     &__left{
         @include breakpoint-down('medium'){
             width: 100%;
+            text-align: center;
         }
         h2{
             font-size: $font-lg;

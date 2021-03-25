@@ -33,6 +33,23 @@
         z-index: -2;
     }
 
+    &__cta{
+        font-family: $overpassFont;
+        display: flex;
+        justify-content: center;
+        margin-top: 3.5rem;
+        button{
+        border-radius: 1.4rem;
+        border-width: 1px;
+        outline: none;
+        border-color: $white;
+        &:nth-child(2){
+            color: $white;
+            
+            background-color: transparent;
+        }
+        }
+    }
 
 
 }
