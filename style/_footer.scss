@@ -1,0 +1,22 @@
+.footer{
+
+    background-color: $veryDarkBlackBlue;
+    border-radius: 0 7rem 0 0;
+    &__grid{
+        padding-top: 4.375rem;
+        padding-bottom: 5.0625rem;
+        padding-left: 10.375rem;
+        padding-right: 10.375rem;
+        
+        h3{
+            color: $white;
+            margin-bottom: 2.75rem;
+        }
+        p{
+            color: $grayishBlue;
+            &:not(:last-child){
+                margin-bottom: .8rem;
+            }
+        }
+    }
+}

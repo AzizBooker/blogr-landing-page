@@ -63,6 +63,11 @@ h2 {
   font-size: 3.0625rem;
 }
 
+h3 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
 p {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
@@ -134,8 +139,8 @@ p {
 .grid-col-4 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (max-width: 63.9375em) {
@@ -618,5 +623,30 @@ p {
 
 .section3__grid_right p {
   color: #4b5862;
+}
+
+.footer {
+  background-color: #25252d;
+  border-radius: 0 7rem 0 0;
+}
+
+.footer__grid {
+  padding-top: 4.375rem;
+  padding-bottom: 5.0625rem;
+  padding-left: 10.375rem;
+  padding-right: 10.375rem;
+}
+
+.footer__grid h3 {
+  color: white;
+  margin-bottom: 2.75rem;
+}
+
+.footer__grid p {
+  color: #c8c8cb;
+}
+
+.footer__grid p:not(:last-child) {
+  margin-bottom: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
