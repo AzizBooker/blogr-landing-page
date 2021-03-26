@@ -1,0 +1,32 @@
+.section3{
+margin-top: 18rem;
+
+  
+    &__grid{
+
+
+         &_left{
+             position: relative;
+            img{
+                position: absolute;
+                right: 0%;
+                bottom: -5rem;
+            }
+         }
+         &_right{
+             &_text{
+                 margin-bottom: 8rem;
+             }
+            h2{
+                font-size: $font-lg;
+                    font-weight: 600;
+                    color: $veryDarkBlackBlue;
+                    padding-bottom: 1.5rem;
+                    
+            }
+            p{
+                color: $veryDarkGrayishBlue;
+            }
+         }
+    }
+}
