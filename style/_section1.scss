@@ -4,10 +4,12 @@
         &-heading{
             color: $veryDarkGrayishBlue;
             font: $overpassFont;
+            font-size: $font-xlg;
             font-weight: 400;
+            color: $veryDarkBlackBlue;
             
             padding-top: 10.25rem;
-            padding-bottom: 6rem;
+            padding-bottom: 7rem;
             @include breakpoint-down('medium'){
                 padding-bottom: 4rem;
             }

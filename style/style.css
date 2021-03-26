@@ -72,7 +72,8 @@ p {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   word-spacing: 2px;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.3px;
 }
 
 .container-padding-hor {
@@ -93,15 +94,15 @@ p {
   margin: 0 auto;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .hide-for-desktop {
-    display: none;
+    display: none  !important;
   }
 }
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
-    display: none;
+    display: none  !important;
   }
 }
 
@@ -126,6 +127,25 @@ p {
 
 @media (max-width: 63.9375em) {
   .grid-col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.grid-col-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 63.9375em) {
+  .grid-col-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -372,9 +392,21 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media (max-width: 63.9375em) {
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navbar__mobile_menu:hover {
+  cursor: pointer;
 }
 
 .navbar__mobile_menu > span {
@@ -392,17 +424,14 @@ p {
   margin-bottom: 5px;
 }
 
-.navbar__mobile_menu > span:hover {
-  cursor: pointer;
+.navbar__desktop_menu {
+  margin-left: 4rem;
 }
 
-.navbar__mobile__desktop_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.navbar__desktop_menu_text {
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .hero_wrapper {
@@ -416,18 +445,30 @@ p {
 
 .hero__text-heading {
   color: white;
-  font-size: 3.0625rem;
+  font-size: 5rem;
   font-family: "Overpass", sans-serif;
   padding-top: 9.1875rem;
   font-weight: 700;
+}
+
+@media (max-width: 63.9375em) {
+  .hero__text-heading {
+    font-size: 2.0625rem;
+  }
 }
 
 .hero__text-subheading {
   padding-top: 2.625rem;
   color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.0625rem;
   font-weight: 400;
+}
+
+@media (max-width: 63.9375em) {
+  .hero__text-subheading {
+    font-size: 1.5rem;
+  }
 }
 
 .hero__bg-image {
@@ -442,18 +483,30 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 
 .hero__cta button {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff7a85;
   border-radius: 1.4rem;
   border-width: 1px;
-  outline: none;
   border-color: white;
+  padding: .4rem 1rem;
+  outline: none;
+}
+
+@media (max-width: 63.9375em) {
+  .hero__cta button {
+    padding: 0.4rem .8rem;
+    font-size: 1rem;
+  }
 }
 
 .hero__cta button:nth-child(2) {
   color: white;
+  margin-left: 2rem;
   background-color: transparent;
 }
 
@@ -464,9 +517,11 @@ p {
 .section1__text-heading {
   color: #4b5862;
   font: "Overpass", sans-serif;
+  font-size: 3.0625rem;
   font-weight: 400;
+  color: #25252d;
   padding-top: 10.25rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -598,6 +653,7 @@ p {
 
 .section3 {
   margin-top: 18rem;
+  margin-bottom: 10rem;
 }
 
 .section3__grid_left {
@@ -637,16 +693,39 @@ p {
   padding-right: 10.375rem;
 }
 
+@media (max-width: 63.9375em) {
+  .footer__grid {
+    text-align: center;
+  }
+}
+
 .footer__grid h3 {
   color: white;
   margin-bottom: 2.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 63.9375em) {
+  .footer__grid h3 {
+    margin-bottom: 2rem;
+  }
+  .footer__grid h3:first-child {
+    margin-top: 2rem;
+  }
 }
 
 .footer__grid p {
   color: #c8c8cb;
+  cursor: pointer;
 }
 
 .footer__grid p:not(:last-child) {
   margin-bottom: .8rem;
+}
+
+@media (max-width: 63.9375em) {
+  .footer__grid p:last-child {
+    margin-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

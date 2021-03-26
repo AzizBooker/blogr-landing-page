@@ -2,10 +2,16 @@
 padding-top: 4rem;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: left;
+@include breakpoint-down('medium'){
+    justify-content: space-between;
+}
 
 &__mobile{
     &_menu{
+        &:hover{
+            cursor: pointer;
+            }
         > span{
         display: block;
         width: 26px;
@@ -16,17 +22,23 @@ justify-content: space-between;
         &:not(:last-child) {
           margin-bottom: 5px;
         }
-        &:hover{
-        cursor: pointer;
-        }
+       
     }
     }
+}
 
 &__desktop{
     &_menu{
-        display: flex;
-        justify-content: space-evenly;
+        margin-left: 4rem;
+        // display: flex;
+       // justify-content: space-evenly;
+        //flex-direction: row;
+        &_text{
+        color: $white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
     }
-}}
+}
 
 }

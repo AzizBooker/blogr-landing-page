@@ -19,7 +19,8 @@ p{
     font-family: $overpassFont;
     font-weight: 300;
     word-spacing: 2px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.3px;
 }
 .container{
 
@@ -46,14 +47,14 @@ p{
 }
 
 .hide-for-desktop{
-    @include breakpoint-up('medium'){
-        display: none;
+    @include breakpoint-up('large'){
+        display: none  !important;
     }
 }
 
 .hide-for-mobile{
     @include breakpoint-down('medium'){
-        display: none;
+        display: none  !important;
     }
 }
 .text{
@@ -73,6 +74,16 @@ p{
         &-2{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            @include breakpoint-down('medium'){
+          
+                display: flex;
+                 flex-direction: column;
+             }
+            
+        }
+        &-3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             @include breakpoint-down('medium'){
           
                 display: flex;

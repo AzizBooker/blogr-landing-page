@@ -15,18 +15,24 @@
         
         &-heading{
         color: $white;
-        font-size: $font-xlg;
+        font-size: $font-xxlg;
         font-family:$overpassFont;
         padding-top: 9.1875rem;
         font-weight: 700;
+        @include breakpoint-down('medium'){
+            font-size: $font-lg;
+        }
         
         }
         &-subheading{
             padding-top: 2.625rem;
             color: $white;
             font-family:$overpassFont;
-            font-size: $font-md;
+            font-size: $font-lg;
             font-weight: 400;
+            @include breakpoint-down('medium'){
+                font-size: $font-md;
+            }
         }
     }
     &__bg-image{
@@ -37,14 +43,23 @@
         font-family: $overpassFont;
         display: flex;
         justify-content: center;
-        margin-top: 3.5rem;
+        margin-top: 5rem;
         button{
+            font-size: $font-md;
+            font-weight: 700;
+            color: $veryLightRed;
         border-radius: 1.4rem;
         border-width: 1px;
-        outline: none;
         border-color: $white;
+        padding: .4rem 1rem;
+        outline: none;
+        @include breakpoint-down('medium'){
+            padding: 0.4rem .8rem;
+            font-size: $font-sm;
+        }
         &:nth-child(2){
             color: $white;
+            margin-left: 2rem;
             
             background-color: transparent;
         }
